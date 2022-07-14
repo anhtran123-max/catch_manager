@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLCHDHDataSet" targetNamespace="http://tempuri.org/QLCHDHDataSet.xsd" xmlns:mstns="http://tempuri.org/QLCHDHDataSet.xsd" xmlns="http://tempuri.org/QLCHDHDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLCHDHConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLCHDHConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BTL_PTTKHT.Properties.Settings.GlobalReference.Default.QLCHDHConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_ShowBillTableAdapter" GeneratorDataComponentClassName="View_ShowBillTableAdapter" Name="View_ShowBill" UserDataComponentName="View_ShowBillTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLCHDHConnectionString (Settings)" DbObjectName="QLCHDH.dbo.View_ShowBill" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SOHD, TENNV, TENKH, NGAYLAPHOADON, MASP, TENSP, SOLUONG, DONGIASP, THANHTIENSP, THANHTIENHD, TRANGTHAI FROM dbo.View_ShowBill</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SOHD" DataSetColumn="SOHD" />
+              <Mapping SourceColumn="TENNV" DataSetColumn="TENNV" />
+              <Mapping SourceColumn="TENKH" DataSetColumn="TENKH" />
+              <Mapping SourceColumn="NGAYLAPHOADON" DataSetColumn="NGAYLAPHOADON" />
+              <Mapping SourceColumn="MASP" DataSetColumn="MASP" />
+              <Mapping SourceColumn="TENSP" DataSetColumn="TENSP" />
+              <Mapping SourceColumn="SOLUONG" DataSetColumn="SOLUONG" />
+              <Mapping SourceColumn="DONGIASP" DataSetColumn="DONGIASP" />
+              <Mapping SourceColumn="THANHTIENSP" DataSetColumn="THANHTIENSP" />
+              <Mapping SourceColumn="THANHTIENHD" DataSetColumn="THANHTIENHD" />
+              <Mapping SourceColumn="TRANGTHAI" DataSetColumn="TRANGTHAI" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLCHDHDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLCHDHDataSet" msprop:Generator_UserDSName="QLCHDHDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_ShowBill" msprop:Generator_TableClassName="View_ShowBillDataTable" msprop:Generator_TableVarName="tableView_ShowBill" msprop:Generator_TablePropName="View_ShowBill" msprop:Generator_RowDeletingName="View_ShowBillRowDeleting" msprop:Generator_RowChangingName="View_ShowBillRowChanging" msprop:Generator_RowEvHandlerName="View_ShowBillRowChangeEventHandler" msprop:Generator_RowDeletedName="View_ShowBillRowDeleted" msprop:Generator_UserTableName="View_ShowBill" msprop:Generator_RowChangedName="View_ShowBillRowChanged" msprop:Generator_RowEvArgName="View_ShowBillRowChangeEvent" msprop:Generator_RowClassName="View_ShowBillRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SOHD" msprop:Generator_ColumnVarNameInTable="columnSOHD" msprop:Generator_ColumnPropNameInRow="SOHD" msprop:Generator_ColumnPropNameInTable="SOHDColumn" msprop:Generator_UserColumnName="SOHD" type="xs:int" />
+              <xs:element name="TENNV" msprop:Generator_ColumnVarNameInTable="columnTENNV" msprop:Generator_ColumnPropNameInRow="TENNV" msprop:Generator_ColumnPropNameInTable="TENNVColumn" msprop:Generator_UserColumnName="TENNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENKH" msprop:Generator_ColumnVarNameInTable="columnTENKH" msprop:Generator_ColumnPropNameInRow="TENKH" msprop:Generator_ColumnPropNameInTable="TENKHColumn" msprop:Generator_UserColumnName="TENKH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAYLAPHOADON" msprop:Generator_ColumnVarNameInTable="columnNGAYLAPHOADON" msprop:Generator_ColumnPropNameInRow="NGAYLAPHOADON" msprop:Generator_ColumnPropNameInTable="NGAYLAPHOADONColumn" msprop:Generator_UserColumnName="NGAYLAPHOADON" type="xs:dateTime" />
+              <xs:element name="MASP" msprop:Generator_ColumnVarNameInTable="columnMASP" msprop:Generator_ColumnPropNameInRow="MASP" msprop:Generator_ColumnPropNameInTable="MASPColumn" msprop:Generator_UserColumnName="MASP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENSP" msprop:Generator_ColumnVarNameInTable="columnTENSP" msprop:Generator_ColumnPropNameInRow="TENSP" msprop:Generator_ColumnPropNameInTable="TENSPColumn" msprop:Generator_UserColumnName="TENSP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SOLUONG" msprop:Generator_ColumnVarNameInTable="columnSOLUONG" msprop:Generator_ColumnPropNameInRow="SOLUONG" msprop:Generator_ColumnPropNameInTable="SOLUONGColumn" msprop:Generator_UserColumnName="SOLUONG" type="xs:int" />
+              <xs:element name="DONGIASP" msprop:Generator_ColumnVarNameInTable="columnDONGIASP" msprop:Generator_ColumnPropNameInRow="DONGIASP" msprop:Generator_ColumnPropNameInTable="DONGIASPColumn" msprop:Generator_UserColumnName="DONGIASP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="THANHTIENSP" msprop:Generator_ColumnVarNameInTable="columnTHANHTIENSP" msprop:Generator_ColumnPropNameInRow="THANHTIENSP" msprop:Generator_ColumnPropNameInTable="THANHTIENSPColumn" msprop:Generator_UserColumnName="THANHTIENSP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="THANHTIENHD" msprop:Generator_ColumnVarNameInTable="columnTHANHTIENHD" msprop:Generator_ColumnPropNameInRow="THANHTIENHD" msprop:Generator_ColumnPropNameInTable="THANHTIENHDColumn" msprop:Generator_UserColumnName="THANHTIENHD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANGTHAI" msprop:Generator_ColumnVarNameInTable="columnTRANGTHAI" msprop:Generator_ColumnPropNameInRow="TRANGTHAI" msprop:Generator_ColumnPropNameInTable="TRANGTHAIColumn" msprop:Generator_UserColumnName="TRANGTHAI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
